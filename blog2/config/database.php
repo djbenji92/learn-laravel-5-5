@@ -78,6 +78,20 @@ return [
             'prefix' => '',
         ],
 
+        'testing' => [
+            'driver'    => env('TESTING_DB_DRIVER', 'mysql'),
+            'database'  => env('TESTING_DB_DATABASE', 'laravel_test'),
+            'host'      => env('TESTING_DB_HOST', '127.0.0.1'),
+            'port'      => env('TESTING_DB_PORT', '8889'),
+            'username'  => env('TESTING_DB_USERNAME', 'root'),
+            'password'  => env('TESTING_DB_PASSWORD', 'root'),
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+            'strict'    => true,
+            'engine'    => null,
+        ],
+
     ],
 
     /*
